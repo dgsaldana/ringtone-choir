@@ -1,0 +1,133 @@
+:root {
+  --colordark: #832831;
+  --colorbg: #E9E3C9;
+  --colorhighlight: #e9eaf0;
+  --color1: #4557B8;
+  --color2: #AE8B43;
+  --color3: #4A8764;
+  --color4: #eb834f;
+}
+
+a{
+  color:#F1D900;
+}
+
+html{
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+hr{
+  border-top: 3px solid var(--colorhighlight);
+  border-radius: 5px;
+  margin: 5px;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Irish Grover";
+  src: url(IrishGrover-Regular.ttf);
+}
+
+p{
+  font-family: "Irish Grover";
+  color: var(--colorhighlight);
+  font-size: .7em;
+}
+
+h1{
+font-family: "Irish Grover";
+color: var(--colorhighlight);
+font-size: 2.2em;
+padding-top: 10px;
+margin: 0px;
+line-height: .7em;
+-webkit-text-stroke: 1px var(--colordark);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100vw;
+    max-height: 80vh;
+    background-color: var(--colordark);
+    background-image: url("BGPatternSnowy.png");
+}
+
+.button{
+  background-color: #ffffff00;
+  color: #ffffffaa;
+  margin: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 7vh;
+  width: 15vh;
+  min-width: 70px;
+  height: 20vh;
+  min-height: 70px;
+  border-radius: 200px;
+  transition: opacity 2s ;
+  box-shadow: -5px 5px 5px rgba(0,0,0,0.2);
+  opacity: .7;
+  display: none;
+  border: 3px solid var(--colorhighlight);
+  transform: rotate(300deg);
+}
+
+.button:active{
+  opacity: 1;
+  transition: opacity 0.05s ;
+}
+
+.button-div{
+  width: 95%;
+  padding: 10px;
+}
+
+.container{
+  height: 75vh;
+  width:  500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1vh 2vh 0vh 2vh;
+  padding: 0px;
+  background-color: var(--colorbg);
+  border: 10px solid var(--colorhighlight);
+  border-radius: 15%;
+  min-width: 20vw;
+  max-width: 88vw;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.7);
+  box-shadow: inset -40px -70px 200px 10px #00000022;
+}
+
+.reset{
+  border-radius: 5px;
+  font-family: "Irish Grover";
+  border: 2px solid var(--colorhighlight);
+  color: var(--colorhighlight);
+  font-size: 1em;
+  padding: .3em;
+  margin: 0em;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+.selection{
+  border-radius: 25px;
+  font-family: "Irish Grover";
+  color: var(--colorhighlight);
+  background-color: var(--colordark);
+  border: 5px solid var(--colorhighlight);
+  font-size: 2em;
+  padding: .5em;
+  margin: .05em;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
